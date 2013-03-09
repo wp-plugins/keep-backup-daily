@@ -177,3 +177,7 @@ PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 
 
+== Screenshots ==
+
+1. keep_backup_daily.png
+
