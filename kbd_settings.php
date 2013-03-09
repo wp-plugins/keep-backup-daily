@@ -138,7 +138,7 @@
 
     
 
-	<p class="description">Note: Modified settings will applied to this plugin only.</p>
+	<p class="description">Note: Modified settings will apply to this plugin only.</p>
 
 </fieldset></td>
 
