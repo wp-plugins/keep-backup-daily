@@ -21,7 +21,7 @@ Keep Backup Daily backup your wordpress database and email to you daily, weekly,
 
 * Author: [Fahad Mahmood](http://www.androidbubbles.com/contact)
 
-* Project URI: <http://www.androidbubbles.com/extends/wordpress/plugins/keep_backup_daily.zip>
+* Project URI: <http://www.websitedesignwebsitedevelopment.com/website-development/php-frameworks/wordpress/plugins/wordpress-plugin-keep-backup-daily/1046>
 
 * License: GPL 3. See License below for copyright jots and tittles.
 
