@@ -125,9 +125,7 @@ Method-B:
 User friendliness related improvements, will not effect anything else.
 
 
-
 = Upgrades =
-
 
 
 To *upgrade* an existing installation of Keep Backup Daily to the most recent
