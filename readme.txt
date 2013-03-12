@@ -6,7 +6,7 @@ Tags: mysql export, database backup, email database backup, email mysql dump, re
 
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -115,11 +115,17 @@ Method-B:
 
 == Changelog ==
 
+= 1.2.1 =
+* Expected backup email time bug is fixed.
+
 = 1.2 =
 * Scheduled time for database backup is displayed
 * Maximum execution time input field removed for convenience of the users. Now it will manage all kind of databases automatically.
 
 == Upgrade Notice ==
+
+= 1.2.1 =
+Expected backup email time bug is fixed.
 
 = 1.2 =
 User friendliness related improvements, will not effect anything else.
