@@ -18,7 +18,7 @@ Description: This plugin will backup the mysql tables and email to a specified e
 
 
 
-Version: 1.2
+Version: 1.2.1
 
 
 
