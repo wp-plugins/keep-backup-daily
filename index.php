@@ -4,11 +4,11 @@
 
 Plugin Name: Keep Backup Daily
 
-Plugin URI: http://www.websitedesignwebsitedevelopment.com/plugins/keep_backup_daily.zip
+Plugin URI: http://www.websitedesignwebsitedevelopment.com/website-development/php-frameworks/wordpress/plugins/wordpress-plugin-keep-backup-daily/1046
 
 Description: This plugin will backup the mysql tables and email to a specified email address daily, weekly, monthly or even yearly. It will provide you a convenience of settings and having backup in inbox to maintain it on disk as well.
 
-Version: 1.0
+Version: 1.2
 
 Author: Fahad Mahmood 
 
