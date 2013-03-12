@@ -113,6 +113,18 @@ Method-B:
 [Keep Backup Daily Quick Start]: http://www.websitedesignwebsitedevelopment.com/website-development/php-frameworks/wordpress/plugins/wordpress-plugin-keep-backup-daily/1046
 
 
+== Changelog ==
+
+= 1.2 =
+* Scheduled time for database backup is displayed
+* Maximum execution time input field removed for convenience of the users. Now it will manage all kind of databases automatically.
+
+== Upgrade Notice ==
+
+= 1.2 =
+User friendliness related improvements, will not effect anything else.
+
+
 
 = Upgrades =
 
