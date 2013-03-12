@@ -115,20 +115,9 @@ Method-B:
 
 == Changelog ==
 
-= 1.2.1 =
-* Expected backup email time bug is fixed.
-
-= 1.2 =
-* Scheduled time for database backup is displayed
-* Maximum execution time input field removed for convenience of the users. Now it will manage all kind of databases automatically.
 
 == Upgrade Notice ==
 
-= 1.2.1 =
-Expected backup email time bug is fixed.
-
-= 1.2 =
-User friendliness related improvements, will not effect anything else.
 
 
 = Upgrades =
