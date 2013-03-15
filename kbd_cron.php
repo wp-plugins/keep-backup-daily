@@ -1,7 +1,4 @@
 <?php ini_set('max_execution_time', 60*60);
-
-	
-
 		/* backup the db OR just a table */
 
 		function backup_tables($name, $backup_file, $zip_file, $tables = '*')
@@ -51,9 +48,6 @@
 			}
 
 			
-
-	
-
 			//cycle through
 
 			foreach($tables as $table) 

@@ -97,9 +97,6 @@
 		}	
 
 	}
-
-	
-
 	if(!function_exists('log_kbd'))
 
 	{
@@ -137,9 +134,6 @@
 		}
 
 	}
-
-	
-
 	if(!function_exists('kbd_start'))
 	{
 		function kbd_start()
@@ -149,9 +143,6 @@
 
 		}	
 	}
-
-	
-
 	if(!function_exists('kbd_end'))
 	{
 
@@ -177,18 +168,11 @@
 			$data = array();
 
 			
-			return update_kbd_cron($data);
-
-
-
-		}
+			return update_kbd_cron($data);		}
 
 		
 
 	}	
-
-	
-
 	if(!function_exists('update_kbd_cron'))
 	{
 
@@ -231,9 +215,6 @@
 		}
 
 	}
-
-	
-
 	if(!function_exists('isValidEmail'))
 	{
 
@@ -244,7 +225,4 @@
 		}	
 
 	}
-
-	
-
 ?>

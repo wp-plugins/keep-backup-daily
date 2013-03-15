@@ -63,11 +63,7 @@ medium.expected
 
 <p class="description">Default: <?php echo $default_email; ?></p>
 
-</td>
-
-
-
-</tr>
+</td></tr>
 
 <tr valign="top">
 
@@ -101,10 +97,6 @@ medium.expected
 
 </tr>
 
-
-
-
-
 <tr valign="top">
 
 <th scope="row">Cron Job Settings <span title="By default we will access cron file placed on your server for your convenience. Because most of the users don't have idea that how to set a cron or conscious about their server performance." style="color:red">(Important)</span></th>
@@ -130,15 +122,7 @@ medium.expected
 </tr>
 
 
-
-
-
-
 </tbody></table>
-
-
-
-
 
 <p class="submit"><input type="submit" value="Save Changes" class="button button-primary" id="submit" name="submit"></p></form>
 

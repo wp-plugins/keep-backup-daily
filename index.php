@@ -24,10 +24,6 @@ License: GPL3
 
 	include('kbd_cron.php');
 
-
-
-
-
 	function kbd_menu()
 
 	{
@@ -35,9 +31,6 @@ License: GPL3
 		 add_options_page('Keep Backup Daily', 'KBD Settings', 'update_core', 'kbd_settings', 'kbd_settings',   plugin_dir_url(__FILE__).'/database_email.png', 66);
 
 	}
-
-	
-
 	function kbd_settings() 
 
 	{ 
@@ -187,9 +180,6 @@ License: GPL3
 		include('kbd_settings.php');			
 
 	}	
-
-	
-
 
 	
 	register_activation_hook(__FILE__, 'kbd_start');
