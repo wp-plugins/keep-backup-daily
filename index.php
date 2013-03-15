@@ -45,7 +45,8 @@ License: GPL3
 
 		$salt = date('YmddmY')+date('m');
 
-		//DEFAULT BACKUP RECIPIENT EMAIL ADDRESS		$default_email = 'info@'.str_replace('www.','',$_SERVER['HTTP_HOST']);
+		//DEFAULT BACKUP RECIPIENT EMAIL ADDRESS	
+		$default_email = 'info@'.str_replace('www.','',$_SERVER['HTTP_HOST']);
 
 		$kbd_settings_file = dirname(__FILE__).'/settings.dat';		//SETTINGS PARAMS TO BE STORED IN .DAT FILE		$settings = array();
 
@@ -66,13 +67,14 @@ License: GPL3
 
 		$settings['log'] = file_exists($kbd_log_file)?file_get_contents($kbd_log_file):'';
 
-		 		//ENSURING THE VALID EMAIL ADDRESS		if(isValidEmail($_POST['recpient_email_address']))
+		 		//ENSURING THE VALID EMAIL ADDRESS	
+		if(isValidEmail($_POST['recpient_email_address']))
 
 		{ 
 
-				//PREVENTING CSRF		if(isset($_POST['kbd_key']) && $_SESSION['kbd_key']==$_POST['kbd_key']) 
-
-
+				//PREVENTING CSRF		
+		
+		if(isset($_POST['kbd_key']) && $_SESSION['kbd_key']==$_POST['kbd_key']) 
 		{			$data = array(
 
 			'backup_required'=>$_POST['backup_required'],
@@ -85,9 +87,11 @@ License: GPL3
 
 			);
 
-						//ACTION URL FOR BACKUP & EMAIL ACTIVITY			$submitted_url = update_kbd_cron($data);
+			//ACTION URL FOR BACKUP & EMAIL ACTIVITY			
+			$submitted_url = update_kbd_cron($data);
 
-			//STORING SETTINGS IN .DAT FILE			$data = serialize($data);
+			//STORING SETTINGS IN .DAT FILE			
+			$data = serialize($data);
 
 			$handle = fopen($kbd_settings_file,'wb+');
 
@@ -95,7 +99,9 @@ License: GPL3
 
 			fclose($handle);			$settings['notification'] = 'Settings saved.';
 
-			$settings['notification_class'] = 'updated';							//GETTING EXPECTED BACKUP EMAIL TIME FROM SERVER
+			$settings['notification_class'] = 'updated';
+			
+			//GETTING EXPECTED BACKUP EMAIL TIME FROM SERVER
 
 			$remote_uri = 'http://www.androidbubbles.com/api/kbd.php?next_backup='.time().'&backup_time='.$_POST['backup_required'].'&domain_url='.base64_encode($submitted_url);
 
@@ -127,9 +133,13 @@ License: GPL3
 
 		}
 
-				//STORING ENCRYPTION KEY IN SESSION		$_SESSION['kbd_key'] = $settings['kbd_key'] = kbd_encrypt($_SERVER['HTTP_HOST'].date('m'), $_SERVER['HTTP_HOST'], $salt);
+		//STORING ENCRYPTION KEY IN SESSION	
+		$_SESSION['kbd_key'] = $settings['kbd_key'] = kbd_encrypt($_SERVER['HTTP_HOST'].date('m'), $_SERVER['HTTP_HOST'], $salt);
 
-		//LOADING STORED SETTINGS FROM .DAT FILE		$settings = load_kbd_settings($settings);				//ENSURING THAT RECIPIENT IS ONLY ONE		if(count($settings['recpient_email_address'])==0)		{			$settings['recpient_email_address'][] = $default_email;		}		
+		//LOADING STORED SETTINGS FROM .DAT FILE		
+		$settings = load_kbd_settings($settings);				
+		//ENSURING THAT RECIPIENT IS ONLY ONE	
+		if(count($settings['recpient_email_address'])==0)		{			$settings['recpient_email_address'][] = $default_email;		}		
 
 						$settings['notification'] = $settings['notification_class']!=''?'<div class="'.$settings['notification_class'].' settings-error" id="setting-error-settings_updated"> 
 
@@ -137,7 +147,11 @@ License: GPL3
 
 		
 
-		$expected_backup = $_SESSION['expected_backup'];				//EXPECTED BACKUP EMAIL GENERATION TIME		$settings['cron_d']['expected_backup'] = '';		$settings['cron_w']['expected_backup'] = '';		$settings['cron_m']['expected_backup'] = '';		$settings['cron_y']['expected_backup'] = '';
+		$expected_backup = $_SESSION['expected_backup'];				//EXPECTED BACKUP EMAIL GENERATION TIME	
+			$settings['cron_d']['expected_backup'] = '';
+			$settings['cron_w']['expected_backup'] = '';
+			$settings['cron_m']['expected_backup'] = '';
+			$settings['cron_y']['expected_backup'] = '';
 
 		$settings[$settings['backup_required']]['expected_backup'] = ($expected_backup!=''?'<medium class="expected">Backup Email Expected in '.$expected_backup.'</medium>':'');						
 
@@ -147,12 +161,16 @@ License: GPL3
 
 			register_activation_hook(__FILE__, 'kbd_start');
 
-	//KBD END WILL REMOVE .DAT FILES	register_deactivation_hook(__FILE__, 'kbd_end' );
+	//KBD END WILL REMOVE .DAT FILES	
+	register_deactivation_hook(__FILE__, 'kbd_end' );
 
 	add_action('init', 'init_sessions');	
 
 	add_action( 'admin_menu', 'kbd_menu' );	
 
-			if(isset($_REQUEST['kbd_cron_process']) && $_REQUEST['kbd_cron_process']=1)
-
-	{		//ACTION TIME FOR BACKUP ACTIVITY		add_action('wp_footer', 'kbd_cron_process', 1);	}
+			
+	if(isset($_REQUEST['kbd_cron_process']) && $_REQUEST['kbd_cron_process']=1)
+	{		
+		//ACTION TIME FOR BACKUP ACTIVITY
+		add_action('wp_footer', 'kbd_cron_process', 1);	
+	}
