@@ -8,7 +8,7 @@ Plugin URI: http://www.websitedesignwebsitedevelopment.com/website-development/p
 
 Description: This plugin will backup the mysql tables and email to a specified email address daily, weekly, monthly or even yearly. It will provide you a convenience of settings and having backup in inbox to maintain it on disk as well.
 
-Version: 1.4
+Version: 1.4.1
 
 Author: Fahad Mahmood 
 
