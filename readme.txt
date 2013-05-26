@@ -2,7 +2,7 @@
 
 Contributors: Fahad Mahmood
 
-Tags: mysql export, database backup, email database backup, email mysql dump, regular backup, daily backup, keep backup daily
+Tags: database security, backup, back up, db, database, offsite, sql, free backup, db backup, online backup, full backup, complete backup, mysql export, database backup, email database backup, email mysql dump, regular backup, daily backup, keep backup daily
 
 Requires at least: 3.0
 Tested up to: 3.5
