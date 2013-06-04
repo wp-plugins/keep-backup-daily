@@ -71,6 +71,8 @@ Method-B:
 [Keep Backup Daily Quick Start]: http://www.websitedesignwebsitedevelopment.com/website-development/php-frameworks/wordpress/plugins/wordpress-plugin-keep-backup-daily/1046
 
 ==Changelog ==
+= 1.4.4 =
+* Donate section added...
 = 1.4.3 =
 * Exception Hanlded: session_start() was having problem with rest of the plugins files with headers already started message. It is fixed.
 
@@ -95,7 +97,9 @@ Method-B:
 
 
 
-==Upgrade Notice =
+==Upgrade Notice ==
+= 1.4.4 =
+Upgrade it to show your love.
 = 1.4.3 =
 @session_start(); is used to avoid warning messages.
 
