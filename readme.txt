@@ -29,8 +29,10 @@ Important!
 
 1- Many of the users might be using free hosting or cheap price hosting. Especially students do that but their data can be important to them, this plugin will give a feel of relax and to restore the website on last stable version of DB.
 
-2- Default Settings: For your convenience, we are providing cron schedule from our website androidbubbles.com to the URL http://www.androidbubbles.com/api/kbd.php. For this purpose, we keep your domain name with us to access it e.g. http://www.yourdomain.com/?kbd_cron_process=1 [wordpress.com][androidbubbles]: http://androidbubbles.wordpress.com/2013/02/26/how-to-get-database-backup-regularly-in-your-inbox/
-[WDWD Blog][Wordpress][]: http://www.websitedesignwebsitedevelopment.com/category/website-development/php-frameworks/wordpressKeep backup daily is arranged in flexible manner for better user experience.
+2- Default Settings: For your convenience, we are providing cron schedule from our website androidbubbles.com to the URL http://www.androidbubbles.com/api/kbd.php. For this purpose, we keep your domain name with us to access it e.g. http://www.yourdomain.com/?kbd_cron_process=1 
+[wordpress.com][androidbubbles]: http://androidbubbles.wordpress.com/2013/02/26/how-to-get-database-backup-regularly-in-your-inbox/
+
+[WDWD Blog][Wordpress][]: http://www.websitedesignwebsitedevelopment.com/category/website-development/php-frameworks/wordpress Keep backup daily is arranged in flexible manner for better user experience.
 
 ==Installation ==
 To use Keep Backup Daily, you will need:
