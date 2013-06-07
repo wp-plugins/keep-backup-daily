@@ -21,7 +21,13 @@
 		 // Build $iv and $iv_base64.  We use a block size of 128 bits (AES compliant) and CBC mode.  (Note: ECB mode is inadequate as IV is not used.)
 
 
-		 srand(); $iv = @mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC), MCRYPT_RAND);
+		 srand(); 
+
+
+                 if(function_exists('mcrypt_create_iv'))
+                 $iv = mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC), MCRYPT_RAND);
+                 else
+                 $iv = '鶵�^)W�D';
 
 
 		 if (strlen($iv_base64 = rtrim(base64_encode($iv), '=')) != 22) return false;
