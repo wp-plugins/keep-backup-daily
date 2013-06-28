@@ -13,7 +13,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Keep Backup Daily backup your wordpress database and email to you daily, weekly, monthly and even yearly according to the settings.
 
-== Screenshots ==1. Settings Form
+== Screenshots ==
+
+1. Settings Form
 
 
 == Description ==
