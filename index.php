@@ -26,10 +26,10 @@ License: GPL3
 	
 	global $kbd_rc;	
 	
-	if(is_admin()){
+	
 		
-		$kbd_rc = requirements_check();		
-	}	
+	$kbd_rc = requirements_check();		
+	
 	
 	
 	function kbd_menu(){
