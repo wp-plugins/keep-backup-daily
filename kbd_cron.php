@@ -2,7 +2,7 @@
 		/* backup the db OR just a table */
 
 		function backup_tables($name, $backup_file, $zip_file, $tables = '*'){ 
-
+		$kbd_rc = requirements_check();	
 		$ret = false;
 
 		if(!file_exists($backup_file)){
@@ -144,7 +144,7 @@
 		
 		function kbd_cron_process(){
 
-
+				$kbd_rc = requirements_check();	
 				$settings = load_kbd_settings();	
 
 
