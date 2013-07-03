@@ -11,7 +11,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.htmlKeep Backup Daily backup your wordpress database and email to you daily, weekly, monthly and even yearly according to the settings.
 
 == Frequently Asked Questions ==
-1. Do this plugin support backup file download?
+1. Does this plugin support download backup file?
 Answer: YES
 
 2. Is it secure? If yes, how?
@@ -33,7 +33,7 @@ Answer: Contact plugin author, he might will suggest you to exclude some tables 
 Answer: Files backup feature will be available soon. For now, i am trying to cover every possible aspect related to database backup.
 
 8. Is there any premium addon for this plugin or any feature which is not in this version?
-Answer: YES, you can not schedule the backup interval with your consent in free version. And very large databases can not be emailed as well. So these all exceptional cases are handled in premium version.
+Answer: YES, time slot can not be selected in free version. And very large databases can not be emailed as well. So these all exceptional cases are handled in premium version.
 
 
 
