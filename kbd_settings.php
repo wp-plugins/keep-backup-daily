@@ -67,9 +67,9 @@
 
 	</p> 
 	<p>
-    <a id="cron_now" title="Click here to email your backup now">Email backup now</a>
+    <a id="cron_now" title="Click here to email your backup now">Email Backup Now</a>
     &nbsp;|&nbsp;
-     <a id="kbd_backup_now" title="Click here to download your backup now">Download backup now</a>
+     <a id="kbd_backup_now" title="Click here to download your backup now">Download Backup Now</a>
     
     </p>
     
