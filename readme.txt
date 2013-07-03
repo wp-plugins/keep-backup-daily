@@ -15,7 +15,8 @@ Keep Backup Daily backup your wordpress database and email to you daily, weekly,
 
 == Screenshots ==
 
-1. Settings Form
+1. Quick Backup
+2. Scheduled Backup Settings
 
 
 == Description ==
