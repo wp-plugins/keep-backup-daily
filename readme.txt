@@ -78,9 +78,9 @@ Method-A:
 
 4. Now go to admin menu -> settings -> KBD Settings
 
-5- Your email is by default administrator email to send backup emails, but you are required to press save changes button once (at-least)
+5. Your email is by default administrator email to send backup emails, but you are required to press save changes button once (at-least)
 
-6- That's it, now wait for the magic
+6. That's it, now wait for the magic
 Method-B:
 
 1.	Download the Keep Backup Daily installation package and extract the files on
