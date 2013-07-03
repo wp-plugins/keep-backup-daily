@@ -182,9 +182,11 @@ jQuery('#kbd_cron_custom').parent().find('a').click(function(){
 	jQuery('.cron_line').toggle();
 
 });jQuery('#cron_now').click(function(){
+	
+	var dh = jQuery(this).html();
 
 	jQuery(this).parent().append('<p class="sending_backup">Sending to '+jQuery('#recpient_email_address').val()+'</p>');
-	jQuery(this).remove();
+	jQuery(this).html('Please wait...');
 	
 	var jqxhr = jQuery.get(jQuery('.cron_line input').val(), function() {
 	
@@ -192,6 +194,8 @@ jQuery('#kbd_cron_custom').parent().find('a').click(function(){
 	.done(function() { jQuery('.sending_backup').html('Successfully sent.'); })
 	.fail(function() { jQuery('.sending_backup').html('Failed.'); })
 	.always(function() { jQuery('.sending_backup').html('Please check your inbox.'); });
+	
+	jQuery(this).html(dh);
 
 	
 });
