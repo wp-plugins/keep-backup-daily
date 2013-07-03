@@ -1,51 +1,3 @@
-<style type="text/css">
-.kbd_settings a
-{
-	cursor:pointer;
-}
-
-
-.kbd_settings medium.expected
-
-
-{
-
-
-	float:right;
-
-
-}
-
-
-.kbd_settings .useful_link{
-
-	margin-left:10px;
-	float:right;
-}
-.kbd_settings .flower_img{
-	float: left;
-    left: -6px;
-    position: relative;
-    top: 12px;
-    width: 3%;
-}	
-
-.kbd_settings ul.kbd_rc  li.tick,
-.kbd_settings ul.kbd_rc  li.cross{
-    background: transparent url(<?php echo plugins_url('tick_cross.png', __FILE__ ); ?>) no-repeat 0px 3px;
-    list-style-type: none;   
-    padding: 0 0 0 22px;
-}
-.kbd_settings ul.kbd_rc  li.cross{
-	background-position:0px -14px;
-}
-
-.kbd_settings .hide{
-	display:none;
-}
-</style>
-
-
 <div class="wrap kbd_settings">
 
 <div class="icon32" id="icon-options-general"><br></div><h2>Keep Backup Daily - Settings</h2>
@@ -222,7 +174,7 @@ jQuery('.dismiss_link').click(function(){
 	});
 
 jQuery('#kbd_backup_now').click(function(){
-	
+	document.location.href = 'options-general.php?page=kbd_download';
 });
 
 jQuery('#kbd_cron_custom').parent().find('a').click(function(){

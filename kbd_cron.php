@@ -155,7 +155,7 @@
 	
 			$zip_created = backup_tables(DB_NAME, $backup_file, $zip_file);	
 			
-			if(!$kbd_rc['ZipArchive']){
+			if(!$kbd_rc['ZipArchive'] && !$zip_created){
 				$attach_file = $backup_file;
 			}	
 			
@@ -254,7 +254,7 @@
 				header('Content-Length: ' . filesize($attach_file));
 
 				@readfile($attach_file);
-
+				unlink($attach_file);
 				exit(0);	
 				}elseif(function_exists('mime_content_type')){
 					
@@ -273,11 +273,14 @@
 				header("Content-Transfer-Encoding: binary");
 				header("Content-Length: " . filesize($attach_file));
 				@readfile($attach_file);
+				unlink($attach_file);
 				exit(0);					
 					
 				}else{
 					
-					echo '<div class="kbd_manual_download"><a href="'.str_replace($_SERVER['DOCUMENT_ROOT'], '/', $attach_file).'">Click here to download manually</a></div>';
+					
+					echo '<div class="kbd_manual_download">Download is not working<br />
+<a href="http://www.websitedesignwebsitedevelopment.com/website-development/php-frameworks/wordpress/plugins/wordpress-plugin-keep-backup-daily/1046">Click here report a bug</a></div>';
 				}
 				
 
