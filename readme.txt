@@ -14,7 +14,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.htmlKeep Backup Daily backup yo
 
 ==Screenshots ==
 
-1. Settings Form
+1. Quick Backup
+2. Scheduled Backup Settings
+
 
 ==Description ==
 * Author: [Fahad Mahmood](http://www.androidbubbles.com/contact)
