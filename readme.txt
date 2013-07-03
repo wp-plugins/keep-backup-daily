@@ -20,19 +20,19 @@ Answer: It immediately removes the temporary backup file and never reveals the t
 3. What if i am not getting backup email?
 Answer: Immediately report to the plugin author via support tab or on mentioned plugin URL.
 
-4- I have some other queries, other than this plugin, may i ask to the plugin author?
+4. I have some other queries, other than this plugin, may i ask to the plugin author?
 Answer: YES, if the queries are about WordPress and data security then you are welcome.
 
-5- What best method is to contact plugin author?
+5. What best method is to contact plugin author?
 Answer: It is good if you use support tab or plugin's author blog. If you want to reach the author immediately then use contact form on his blog.
 
-6- My website database is really big and this plugin is not handling it, what should i do?
+6. My website database is really big and this plugin is not handling it, what should i do?
 Answer: Contact plugin author, he might will suggest you to exclude some tables and will suggest you to backup only important ones regularly.
 
-7- What about the files backup?
+7. What about the files backup?
 Answer: Files backup feature will be available soon. For now, i am trying to cover every possible aspect related to database backup.
 
-8- Is there any premium addon for this plugin or any feature which is not in this version?
+8. Is there any premium addon for this plugin or any feature which is not in this version?
 Answer: YES, you can not schedule the backup interval with your consent in free version. And very large databases can not be emailed as well. So these all exceptional cases are handled in premium version.
 
 
