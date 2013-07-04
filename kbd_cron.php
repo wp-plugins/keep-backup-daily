@@ -181,7 +181,7 @@
 				$zip_file = $backup_stats['zip_file'];					
 					
 				
-				add_filter( 'wp_mail_content_type', 'set_html_content_type' );
+				//add_filter( 'wp_mail_content_type', 'set_html_content_type' );
 					
 				if(wp_mail( $configEmail, str_replace('.zip', '', basename($zip_file)), $_SERVER['HTTP_HOST'].' - Database Backup by Wordpress Plugin Keep Backup Daily', '', array($attach_file) ))
 
@@ -206,7 +206,7 @@
 					echo strtoupper($_SERVER['HTTP_HOST']);
 				}
 				
-				remove_filter( 'wp_mail_content_type', 'set_html_content_type' ); 
+				//remove_filter( 'wp_mail_content_type', 'set_html_content_type' ); 
 				
 			exit;
 		}
