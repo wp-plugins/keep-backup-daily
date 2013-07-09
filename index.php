@@ -182,8 +182,17 @@ License: GPL3
 		include('kbd_settings.php');			
 
 	}	
-
-	wp_enqueue_style('kbd-style', plugins_url('style.css', __FILE__));
+	
+	
+	
+	function register_kbd_styles() {
+		plugins_url('style.css', __FILE__);
+		wp_register_style( 'kbd-style', plugins_url('style.css', __FILE__) );
+		wp_enqueue_style( 'kbd-style' );
+	}
+	
+	
+	
 
 	register_activation_hook(__FILE__, 'kbd_start');
 
@@ -194,6 +203,7 @@ License: GPL3
 
 	add_action( 'admin_menu', 'kbd_menu' );	
 
+	add_action( 'admin_enqueue_scripts', 'register_kbd_styles' );
 			
 	if(isset($_REQUEST['kbd_cron_process']) && $_REQUEST['kbd_cron_process']=1)
 	{		
