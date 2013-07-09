@@ -102,6 +102,8 @@ Method-B:
 = 1.5 =
 * Requirements console added.
 * On upgrade, settings won't be wasted.
+* Admin email will not be stored in settings file. (Security Fix)
+* wp_enqueue_style related fix. (Thanks to jelnet)
 = 1.4.9 =
 * Now you will get a proper HTML email instead of plain text one.
 * Log file was calculating size of .zip file only. Now it will also calculate if .sql file is not zipped.

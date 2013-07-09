@@ -279,8 +279,9 @@
 				}else{
 					
 					
-					echo '<div class="kbd_manual_download">Download is not working<br />
-<a href="http://www.websitedesignwebsitedevelopment.com/website-development/php-frameworks/wordpress/plugins/wordpress-plugin-keep-backup-daily/1046">Click here report a bug</a></div>';
+					echo '<div class="kbd_manual_download">Download is not working on your server<br /><br />
+Check requirements console in KBD Settings or,
+<a href="http://www.websitedesignwebsitedevelopment.com/website-development/php-frameworks/wordpress/plugins/wordpress-plugin-keep-backup-daily/1046/#reply-title">Click Here For Help</a></div>';
 				}
 				
 

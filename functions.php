@@ -106,6 +106,11 @@
 						
 
 						$settings = array_merge($settings, $data);
+						
+						if($settings['recpient_email_address']=='KBD'){
+						
+						$settings['recpient_email_address'] = get_bloginfo('admin_email');
+						}
 
 					}
 
@@ -155,6 +160,12 @@
 
 		function kbd_start(){	
 
+			$kbd_settings_file = dirname(__FILE__).'/settings.dat';
+			
+			if(file_exists(WP_PLUGIN_DIR.'/kbd_settings.dat')){
+				copy(WP_PLUGIN_DIR.'/kbd_settings.dat', $kbd_settings_file);				
+				unlink(WP_PLUGIN_DIR.'/kbd_settings.dat');
+			}
 				
 
 		}	
@@ -177,9 +188,10 @@
 
 			}
 
-			/*if(file_exists($kbd_settings_file)){
+			if(file_exists($kbd_settings_file)){
+				copy($kbd_settings_file, WP_PLUGIN_DIR.'/kbd_settings.dat');				
 				unlink($kbd_settings_file);
-			}*/
+			}
 			
 			$data = array();
 

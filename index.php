@@ -70,7 +70,7 @@ License: GPL3
 		//DEFAULT BACKUP RECIPIENT EMAIL ADDRESS	
 		$default_email = get_bloginfo('admin_email');
 		
-		$default_email = $default_email!=''?$default_email:'info@'.str_replace('www.','',$_SERVER['HTTP_HOST']);
+		$default_email = $default_email!=''?$default_email:'info@'.str_replace('www.','',$_SERVER['HTTP_HOST']); 
 
 		$kbd_settings_file = dirname(__FILE__).'/settings.dat';		//SETTINGS PARAMS TO BE STORED IN .DAT FILE		$settings = array();
 
@@ -92,9 +92,9 @@ License: GPL3
 		$settings['log'] = file_exists($kbd_log_file)?file_get_contents($kbd_log_file):'';
 
 		 		//ENSURING THE VALID EMAIL ADDRESS	
-		if(isValidEmail($_POST['recpient_email_address']))
+		if(isset($_POST['recpient_email_address']) && isValidEmail($_POST['recpient_email_address']))
 
-		{ 
+		{  
 
 				//PREVENTING CSRF		
 		
@@ -103,7 +103,7 @@ License: GPL3
 
 			'backup_required'=>$_POST['backup_required'],
 
-			'recpient_email_address'=>$_POST['recpient_email_address'],
+			'recpient_email_address'=>($_POST['recpient_email_address']==$default_email?'KBD':$_POST['recpient_email_address']),
 
 			'maintain_log'=>$_POST['maintain_log'],
 
