@@ -101,7 +101,7 @@ Method-B:
 
 ==Changelog ==
 = 1.5.5 =
-* Settings won't be deleted on version update.
+* Settings won't be deleted on version update from next time.
 = 1.5.4 =
 * Old backups will be removed if couldn't sent to you because of email address field was empty. And by default you will get backups on admin email.
 = 1.5.3 =
@@ -155,7 +155,7 @@ Method-B:
 
 ==Upgrade Notice ==
 = 1.5.5 =
-Settings won't be deleted on version update.
+Settings won't be deleted on version update from next time.
 = 1.5.4 =
 Sometimes users forget to enter email address and backup files never sent to their emails but remain in directory. This update will clear those files. And by default you will be receiving backups on your admin email address.
 = 1.5.3 =
