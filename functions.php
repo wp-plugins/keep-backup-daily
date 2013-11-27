@@ -89,9 +89,9 @@
 
 			$kbd_settings_file = dirname(__FILE__).'/settings.dat';
 
-			if(file_exists(WP_PLUGIN_DIR.'/kbd_settings.dat')){
+			if(!file_exists($kbd_settings_file) && file_exists(WP_PLUGIN_DIR.'/kbd_settings.dat')){
 				copy(WP_PLUGIN_DIR.'/kbd_settings.dat', $kbd_settings_file);				
-				unlink(WP_PLUGIN_DIR.'/kbd_settings.dat');
+				//unlink(WP_PLUGIN_DIR.'/kbd_settings.dat');
 			}
 			
 			if(file_exists($kbd_settings_file)){
