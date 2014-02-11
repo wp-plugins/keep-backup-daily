@@ -42,6 +42,7 @@ Answer: YES, time slot can not be selected in free version. And very large datab
 2. Scheduled Backup Settings
 3. Requirements Console
 4. Recommended Links
+5. Update settings form
 
 ==Description ==
 * Author: [Fahad Mahmood](http://www.androidbubbles.com/contact)
