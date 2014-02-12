@@ -54,6 +54,7 @@
 <?php echo $settings['cron_w']['expected_backup']; ?>
 <?php echo $settings['cron_m']['expected_backup']; ?>
 <?php echo $settings['cron_y']['expected_backup']; ?>
+&nbsp;
 </div>
 <fieldset style="float:left">
 
