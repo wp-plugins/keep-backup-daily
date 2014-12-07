@@ -25,19 +25,19 @@ License: GPL3
 	include('kbd_cron.php');
 	
 	global $kbd_rc;	
-    global $kbd_rs, $kbd_pro, $kbd_dir, $premium_link;	
+    global $kbd_rs, $kbd_pro, $kbd_dir, $kbd_premium_link;	
 
 	$kbd_dir = plugin_dir_path( __FILE__ );
 	
 	$kbd_pro = file_exists($kbd_dir.'inc/functions_extended.php');
 		
-	$premium_link = 'http://shop.androidbubbles.com/product/keep-backup-daily-pro';
+	$kbd_premium_link = 'http://shop.androidbubbles.com/product/keep-backup-daily-pro';
 
 		 
 	$kbd_rc = requirements_check();		
 
 	$kbd_rs = array();
-	$kbd_rs[] = '<a target="_blank" href="'.$premium_link.'">Get premium version now!</a>';
+	$kbd_rs[] = '<a target="_blank" href="'.$kbd_premium_link.'">Get premium version now!</a>';
 	$kbd_rs[] = '<a target="_blank" href="http://www.websitedesignwebsitedevelopment.com/website-development/keep-backup-daily-how-to-restore-your-backup-files/1363/">How to restore backup files?</a>';
 	$kbd_rs[] = '<a target="_blank" href="plugin-install.php?tab=search&s=wp+mechanic&plugin-search-input=Search+Plugins">Install WP Mechanic</a>';
 	$kbd_rs[] = '<a target="_blank" href="http://www.websitedesignwebsitedevelopment.com/contact">Contact Developer</a>';

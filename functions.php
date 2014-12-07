@@ -346,7 +346,7 @@
 	if ( ! function_exists("kbd_plugin_links"))
 	{
 		function kbd_plugin_links($links) { 
-			global $premium_link, $kbd_pro;
+			global $kbd_premium_link, $kbd_pro;
 			
 			$settings_link = '<a href="options-general.php?page=kbd_settings">Settings</a>';
 			
@@ -354,8 +354,8 @@
 				array_unshift($links, $settings_link); 
 			}else{
 				 
-				$premium_link = '<a href="'.$premium_link.'" title="Go Premium" target=_blank>Go Premium</a>'; 
-				array_unshift($links, $settings_link, $premium_link); 
+				$kbd_premium_link = '<a href="'.$kbd_premium_link.'" title="Go Premium" target=_blank>Go Premium</a>'; 
+				array_unshift($links, $settings_link, $kbd_premium_link); 
 			
 			}
 			
