@@ -1,4 +1,6 @@
-﻿=== Keep Backup Daily ===Contributors: Fahad MahmoodTags: mysql export, database backup, email database backup, email mysql dump, regular backup, daily backup, keep backup dailyRequires at least: 3.0
+﻿=== Keep Backup Daily ===
+Contributors: fahadmahmood
+Tags: mysql export, database backup, email database backup, email mysql dump, regular backup, daily backup, keep backup dailyRequires at least: 3.0
 
 Tested up to: 3.5
 
