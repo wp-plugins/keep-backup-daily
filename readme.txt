@@ -1,7 +1,6 @@
 ﻿=== Keep Backup Daily ===
 
 Contributors: fahadmahmood
-Donate link: http://goo.gl/GHX5N
 Tags: database security, backup, back up, db, database, offsite, sql, free backup, db backup, online backup, full backup, complete backup, mysql export, database backup, email database backup, email mysql dump, regular backup, daily backup, keep backup daily
 
 Requires at least: 3.0
