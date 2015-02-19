@@ -1,6 +1,6 @@
 ﻿==Keep Backup Daily ===
 
-Contributors: Fahad Mahmood
+Contributors: fahadmahmood
 
 Tags: mysql export, database backup, email database backup, email mysql dump, regular backup, daily backup, keep backup daily
 
