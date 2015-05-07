@@ -14,15 +14,8 @@
 <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
 
 
-<div class="welcome-panel" id="request_panel">
-<a class="welcome-panel-close dismiss_link">Dismiss</a>
-<img class="flower_img" src="<?php echo plugin_dir_url(__FILE__); ?>/flower.png">
 
-		<h2><span class="promo">Show some love!</span></h2>
-		<p>Want to appreciate the effort behind this plugin? <a target="_blank" class="button" href="http://www.websitedesignwebsitedevelopment.com/donate-now/" >Donate</a> $5, $10 or $50 now!</p>
-       
-        <p>Or you could:</p><ul><li><a href="http://wordpress.org/support/view/plugin-reviews/keep-backup-daily" target="_blank">Rate this plugin 5 stars on WordPress.org</a></li></ul>	
-</div>
+
 
 <input type="hidden" name="kbd_key" value="<?php echo $settings['kbd_key']; ?>">
 
@@ -176,7 +169,8 @@
 </tr>
 </tbody></table>
 
-<p class="submit"><input type="submit" value="Save Changes" class="button button-primary" id="submit" name="submit"><a class="useful_link">Is it Good?</a></p></form>
+<p class="submit"><input type="submit" value="Save Changes" class="button button-primary" id="submit" name="submit">
+</form>
 
 </div>
 
