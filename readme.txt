@@ -4,7 +4,7 @@ Contributors: fahadmahmood
 Tags: database security, backup, back up, db, database, offsite, sql, free backup, db backup, online backup, full backup, complete backup, mysql export, database backup, email database backup, email mysql dump, regular backup, daily backup, keep backup daily
 
 Requires at least: 3.0
-Tested up to: 4.1
+Tested up to: 4.3
 Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.htmlKeep Backup Daily backup your wordpress database and email to you daily, weekly, monthly and even yearly according to the settings.
